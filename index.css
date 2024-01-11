@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  #searchInput {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  #gridButton, #listButton {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  
+  .list-view {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  li{
+    list-style-type: none;
+  }
+  .highlight {
+    background-color: yellow;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .grid-view, .list-view {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+  
